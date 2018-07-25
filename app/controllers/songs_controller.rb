@@ -12,11 +12,7 @@ class SongsController < ApplicationController
   end
 
   def show
-    if @song = Song.find_by_id(params[:id])
-      @song 
-    else 
-      redirect_to songs_path 
-    end
+  binding.pry
   end
 
   def new
