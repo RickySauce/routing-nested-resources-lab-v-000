@@ -19,7 +19,7 @@ class SongsController < ApplicationController
      @song 
    elsif @artist 
      flash[:alert] = "Song not found"
-     redirect_to artist_path(@artist)
+     redirect_to artist_songs_path(@artist)
    elsif @song 
      @song 
    end     
